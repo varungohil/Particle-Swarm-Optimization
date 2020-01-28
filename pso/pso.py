@@ -131,7 +131,7 @@ class PSO:
 					self.best_gbest_fitness = fitness_val
 					self.gbest = self.particle_pbests[index]
 
-	def solve(self, w, c1, c2, num_iter = 1000):
+	def solve(self, w, c1, c2):
 		"""
 		Runs the PSO on opt_sunc within constraints to perform opt_task
 
@@ -144,7 +144,7 @@ class PSO:
 		2-tuple : (optimized solution or position of best particle, fitness of best particle)
 		"""
 		iteration = 1
-		while( (self.particle_pos[0] == self.particle_pos).all().item() == False or iteration <= num_iterations):
+		while( (self.particle_pos[0] == self.particle_pos).all().item() == False):
 			self._get_fitness()
 			self._update_bests(iteration)
 			#Updating velocities of particles
@@ -172,14 +172,14 @@ class PSO:
 			plt.xlabel("Iteration Number")
 			plt.ylabel("Fitness Value")
 			plt.xscale("log")
-			plt.savefig("new_plot.pdf")
+			plt.savefig("new_plot.png")
 
 		# Animating the best particle
 		if self.animate:
 			self._animate(iteration-1)
 
 		
-		return self.particle_pos[0], self.opt_func([self.particle_pos[0, dim] for dim in range(self.num_dims)])
+		return self.gbest, self.opt_func([self.gbest[dim] for dim in range(self.num_dims)])
 
 
 
