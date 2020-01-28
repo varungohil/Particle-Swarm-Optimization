@@ -1,7 +1,7 @@
 # PSO : NIC Assignment-1
 
 ## How to setup and run
-```
+```bash
 # Installs all dependencies
 pip install -r requirements.txt
 
