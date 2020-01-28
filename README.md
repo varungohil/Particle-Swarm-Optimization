@@ -1,4 +1,4 @@
-# PyPSO
+# PSO : NIC Assignment-1
 
 ## How to setup and run
 ```
