@@ -10,8 +10,8 @@ python test.py
 ```
 
 ## Video of best particle over the iterations
-![Alt Text](video.gif)
+![VIDEO](new_video.gif)
 
 ## Plot of gbest fitness value vs the iterations
-![Alt Text](plot.pdf)
+![PLOT](new_plot.png)
 
