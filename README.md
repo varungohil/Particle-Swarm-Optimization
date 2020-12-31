@@ -14,7 +14,8 @@ pip install -r requirements.txt
 python test.py
 ```
 
-The PSO class is defined in pso/pso.py.
+## The PSO Class
+The PSO class is defined in pso/pso.py. All input parameters to a PSO class instance are described in the comments in the code file.
 
 ## Video of best particle over the iterations (new_video.gif)
 The red point indicates the best particle's position.
