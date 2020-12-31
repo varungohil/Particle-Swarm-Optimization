@@ -1,5 +1,4 @@
-# PSO : NIC Assignment-1 
-## Varun Gohil | 16110059
+# Particle Swarm Optimization
 
 ## How to setup and run
 ```bash
